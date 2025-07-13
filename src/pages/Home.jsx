@@ -7,13 +7,13 @@ const Home = () => {
   const cities = Object.values(cityData);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white">
       {/* Hero Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-ink mb-4">
+      <div className="text-center mb-12 p-8 bg-japan-red text-white rounded-lg">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Discover Your Perfect Japanese City
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl max-w-3xl mx-auto">
           Compare Tokyo, Osaka, and Kyoto across the factors that matter most to travelers. 
           Find the city that matches your interests and budget.
         </p>
