@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #E5E7EB;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-red {
+            background-color: #DC2626;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .test-tailwind {
+            background-color: #DC2626;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Test Page</h1>
+    <div class="test-red">
+        This should have a red background with white text (pure CSS)
+    </div>
+    <div class="bg-japan-red text-white p-5 rounded-lg my-5">
+        This should have a red background with white text (Tailwind classes)
+    </div>
+    <p>If you can see styling differences, Tailwind may not be compiling properly.</p>
+</body>
+</html>

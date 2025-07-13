@@ -1,30 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components; 
 @tailwind utilities;
 
-/* Custom base styles */
+/* Japanese-inspired custom styles */
+:root {
+  --japan-red: #DC2626;
+  --japan-deep-red: #B91C1C;
+  --japan-gold: #FCD34D;
+  --sakura: #FFB7C5;
+  --sakura-light: #FDF2F8;
+  --bamboo: #4ADE80;
+  --ink: #1F2937;
+  --paper: #FEFEFE;
+  --mist: #F8FAFC;
+  --shadow: rgba(31, 41, 55, 0.1);
+  --shadow-light: rgba(31, 41, 55, 0.05);
+}
+
+/* Base styles with Japanese aesthetics */
 body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #E5E7EB; /* This should make the background light gray */
+  background: linear-gradient(135deg, var(--mist) 0%, var(--paper) 100%);
+  color: var(--ink);
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+/* Japanese-inspired components */
+.japanese-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 30px var(--shadow-light), 0 2px 8px var(--shadow);
+  border: 1px solid rgb(243 244 246);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.japanese-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow), 0 4px 12px var(--shadow-light);
+}
+
+.zen-border {
+  position: relative;
+}
+
+.zen-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--japan-red), var(--japan-gold));
+  border-radius: 2px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--japan-red), var(--japan-deep-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sakura-gradient {
+  background: linear-gradient(135deg, var(--sakura-light) 0%, #FEF7FF 50%, #F0F9FF 100%);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 183, 197, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(252, 211, 77, 0.1) 0%, transparent 50%);
+}
+
+/* Enhanced typography */
+.japanese-heading {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--japan-red), var(--japan-deep-red));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--japan-red);
+  border: 2px solid var(--japan-red);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: var(--japan-red);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Japanese divider */
+.zen-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--japan-gold), transparent);
+  margin: 2rem 0;
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mist);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--japan-red), var(--japan-deep-red));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--japan-deep-red);
 }
 
 /* Custom utilities */
-.text-japan-red {
-  color: #DC2626;
-}
-
-.bg-japan-red {
-  background-color: #DC2626;
-}
-
-.text-ink {
-  color: #1F2937;
-}
-
-.bg-paper {
-  background-color: #F9FAFB;
-}
+.text-japan-red { color: var(--japan-red); }
+.bg-japan-red { background-color: var(--japan-red); }
+.text-ink { color: var(--ink); }
+.bg-paper { background-color: var(--paper); }
