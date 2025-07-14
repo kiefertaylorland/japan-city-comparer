@@ -1,0 +1,227 @@
+{
+  "id": "tokyo",
+  "name": "Tokyo",
+  "displayName": "Tokyo (東京)",
+  "description": "Japan's bustling capital city, where ultra-modern skyscrapers meet traditional temples and world-class cuisine.",
+  "heroImage": {
+    "url": "/images/tokyo-hero.jpg",
+    "alt": "Tokyo skyline at sunset with Mount Fuji in the background",
+    "credit": "Photo by Unsplash"
+  },
+  "quickFacts": {
+    "population": 13960000,
+    "prefecture": "Tokyo",
+    "establishedYear": 1603,
+    "area": 2194,
+    "averageTemp": {
+      "summer": 26,
+      "winter": 6
+    }
+  },
+  "coordinates": {
+    "latitude": 35.6762,
+    "longitude": 139.6503
+  },
+  "metrics": {
+    "cost": {
+      "overallIndex": 8.5,
+      "accommodation": {
+        "budget": 3500,
+        "mid": 8000,
+        "luxury": 25000
+      },
+      "dailyBudget": {
+        "budget": 6000,
+        "mid": 12000,
+        "luxury": 30000
+      },
+      "meals": {
+        "streetFood": 800,
+        "restaurant": 2500,
+        "fineDining": 15000
+      },
+      "transport": {
+        "dayPass": 800,
+        "taxiPerKm": 320
+      }
+    },
+    "attractions": {
+      "totalCount": 150,
+      "freeAttractions": 45,
+      "worldHeritageSites": 0,
+      "museums": 35,
+      "temples": 25,
+      "parks": 15,
+      "topAttractions": [
+        {
+          "name": "Shibuya Crossing",
+          "nameJP": "渋谷スクランブル交差点",
+          "description": "World's busiest pedestrian crossing",
+          "category": "landmark",
+          "estimatedTime": "30 minutes",
+          "cost": "free",
+          "bestTimeToVisit": "Evening",
+          "accessibility": "easy"
+        },
+        {
+          "name": "Tokyo Tower",
+          "nameJP": "東京タワー",
+          "description": "Iconic red and white tower with city views",
+          "category": "landmark",
+          "estimatedTime": "2 hours",
+          "cost": "medium",
+          "bestTimeToVisit": "Sunset",
+          "accessibility": "easy"
+        },
+        {
+          "name": "Senso-ji Temple",
+          "nameJP": "浅草寺",
+          "description": "Tokyo's oldest temple in Asakusa",
+          "category": "temple",
+          "estimatedTime": "2-3 hours",
+          "cost": "free",
+          "bestTimeToVisit": "Early morning",
+          "accessibility": "moderate"
+        }
+      ],
+      "uniqueExperiences": [
+        "Robot Restaurant show",
+        "Tsukiji Fish Market tuna auction",
+        "Karaoke in Shibuya",
+        "Themed cafes (cat, owl, maid)",
+        "Cherry blossom viewing in Ueno Park"
+      ]
+    },
+    "food": {
+      "diversityScore": 9.5,
+      "michelinStars": 230,
+      "streetFoodScore": 8.0,
+      "vegetarianFriendly": 6.5,
+      "specialties": [
+        {
+          "name": "Edo-mae Sushi",
+          "nameJP": "江戸前寿司",
+          "description": "Traditional Tokyo-style sushi",
+          "category": "main",
+          "difficulty": "easy",
+          "whereToFind": ["Tsukiji Market", "Ginza", "High-end sushi restaurants"]
+        },
+        {
+          "name": "Monjayaki",
+          "nameJP": "もんじゃ焼き",
+          "description": "Tokyo's unique runny pancake dish",
+          "category": "main",
+          "difficulty": "adventurous",
+          "whereToFind": ["Tsukishima", "Local neighborhoods"]
+        }
+      ],
+      "marketCount": 12,
+      "restaurantDensity": 850
+    },
+    "transportation": {
+      "efficiency": 9.8,
+      "coverage": 9.5,
+      "easeOfUse": 7.5,
+      "punctuality": 9.9,
+      "subwayLines": 13,
+      "busLines": 100,
+      "walkability": 8.0,
+      "bikeability": 6.5,
+      "airportConnections": [
+        {
+          "airport": "Haneda",
+          "methods": ["Monorail", "Train", "Bus"],
+          "time": "30 minutes",
+          "cost": 570
+        },
+        {
+          "airport": "Narita",
+          "methods": ["Express train", "Bus"],
+          "time": "60 minutes",
+          "cost": 1030
+        }
+      ]
+    },
+    "culture": {
+      "traditionalScore": 7.5,
+      "modernScore": 9.8,
+      "artScene": 9.0,
+      "festivalsCount": 25,
+      "culturalSites": 85,
+      "languageBarrier": 8.0,
+      "localCustoms": [
+        "Bow when greeting",
+        "Remove shoes indoors",
+        "No eating while walking",
+        "Quiet on trains",
+        "Cash is preferred"
+      ],
+      "culturalEvents": [
+        {
+          "name": "Cherry Blossom Festival",
+          "nameJP": "桜祭り",
+          "description": "Spring celebration of cherry blossoms",
+          "season": "spring",
+          "duration": "2 weeks",
+          "significance": "national"
+        }
+      ]
+    },
+    "nightlife": {
+      "vibrancy": 9.5,
+      "variety": 9.0,
+      "safety": 9.5,
+      "lastTrainTime": "00:30",
+      "barCount": 15000,
+      "clubCount": 200,
+      "izakayaCount": 8000,
+      "uniqueVenues": [
+        "Golden Gai tiny bars",
+        "Rooftop bars in Shibuya",
+        "Karaoke boxes",
+        "Memory Lane (Omoide Yokocho)",
+        "Robot Restaurant"
+      ],
+      "districts": [
+        {
+          "name": "Shibuya",
+          "nameJP": "渋谷",
+          "description": "Young, energetic nightlife hub",
+          "vibe": "modern",
+          "bestFor": ["Young professionals", "Party-goers"],
+          "priceRange": "mid"
+        },
+        {
+          "name": "Golden Gai",
+          "nameJP": "ゴールデン街",
+          "description": "Tiny bars in narrow alleys",
+          "vibe": "traditional",
+          "bestFor": ["Tourists", "Unique experiences"],
+          "priceRange": "expensive"
+        }
+      ]
+    }
+  },
+  "highlights": [
+    "World's largest metropolitan area",
+    "Cutting-edge technology and innovation",
+    "Incredible food scene with most Michelin stars",
+    "Perfect blend of traditional and modern culture",
+    "Efficient public transportation system"
+  ],
+  "bestFor": [
+    "First-time visitors to Japan",
+    "Business travelers",
+    "Food enthusiasts",
+    "Shopping lovers",
+    "Tech and innovation seekers"
+  ],
+  "notIdealFor": [
+    "Budget travelers",
+    "Those seeking quiet, traditional experiences",
+    "Visitors avoiding crowds"
+  ],
+  "slug": "tokyo",
+  "colorTheme": "#f94144",
+  "lastUpdated": "2025-01-15T00:00:00Z"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cost",
+    "name": "Cost of Living",
+    "displayName": "Cost",
+    "icon": "DollarSign",
+    "description": "Overall expense level for accommodation, food, and activities",
+    "unit": "scale",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "cost.overallIndex",
+    "displayFormat": "scale",
+    "tooltip": "1 = Very affordable, 10 = Very expensive",
+    "sortOrder": 1
+  },
+  {
+    "id": "attractions",
+    "name": "Attractions",
+    "displayName": "Attractions",
+    "icon": "Camera",
+    "description": "Number and quality of tourist attractions and experiences",
+    "unit": "count",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "attractions.totalCount",
+    "displayFormat": "number",
+    "tooltip": "Major tourist attractions and experiences",
+    "sortOrder": 2
+  },
+  {
+    "id": "food",
+    "name": "Food Scene",
+    "displayName": "Food",
+    "icon": "UtensilsCrossed",
+    "description": "Quality, diversity, and uniqueness of culinary experiences",
+    "unit": "score",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "food.diversityScore",
+    "displayFormat": "scale",
+    "tooltip": "1 = Limited options, 10 = World-class dining",
+    "sortOrder": 3
+  },
+  {
+    "id": "transportation",
+    "name": "Transportation",
+    "displayName": "Transport",
+    "icon": "Train",
+    "description": "Efficiency, coverage, and ease of public transportation",
+    "unit": "score",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "transportation.efficiency",
+    "displayFormat": "scale",
+    "tooltip": "1 = Poor transport, 10 = Excellent transport",
+    "sortOrder": 4
+  },
+  {
+    "id": "culture",
+    "name": "Cultural Experience",
+    "displayName": "Culture",
+    "icon": "Landmark",
+    "description": "Traditional culture, modern arts, and cultural activities",
+    "unit": "score",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "culture.traditionalScore",
+    "displayFormat": "scale",
+    "tooltip": "1 = Limited culture, 10 = Rich cultural experience",
+    "sortOrder": 5
+  },
+  {
+    "id": "nightlife",
+    "name": "Nightlife",
+    "displayName": "Nightlife",
+    "icon": "Moon",
+    "description": "Evening entertainment, bars, clubs, and nighttime activities",
+    "unit": "score",
+    "chartType": "bar",
+    "colorScheme": {
+      "tokyo": "#f94144",
+      "osaka": "#f3722c",
+      "kyoto": "#577590"
+    },
+    "comparisonKey": "nightlife.vibrancy",
+    "displayFormat": "scale",
+    "tooltip": "1 = Quiet evenings, 10 = Vibrant nightlife",
+    "sortOrder": 6
+  }
+]

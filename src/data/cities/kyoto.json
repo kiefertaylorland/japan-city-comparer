@@ -1,0 +1,244 @@
+{
+  "id": "kyoto",
+  "name": "Kyoto",
+  "displayName": "Kyoto (京都)",
+  "description": "Japan's ancient capital, home to thousands of temples, traditional culture, and the epitome of Japanese aesthetics and spirituality.",
+  "heroImage": {
+    "url": "/images/kyoto-hero.jpg",
+    "alt": "Fushimi Inari shrine with thousands of red torii gates",
+    "credit": "Photo by Unsplash"
+  },
+  "quickFacts": {
+    "population": 1475000,
+    "prefecture": "Kyoto",
+    "establishedYear": 794,
+    "area": 827,
+    "averageTemp": {
+      "summer": 27,
+      "winter": 5
+    }
+  },
+  "coordinates": {
+    "latitude": 35.0116,
+    "longitude": 135.7681
+  },
+  "metrics": {
+    "cost": {
+      "overallIndex": 7.2,
+      "accommodation": {
+        "budget": 3200,
+        "mid": 7500,
+        "luxury": 22000
+      },
+      "dailyBudget": {
+        "budget": 5000,
+        "mid": 10000,
+        "luxury": 25000
+      },
+      "meals": {
+        "streetFood": 700,
+        "restaurant": 2200,
+        "fineDining": 14000
+      },
+      "transport": {
+        "dayPass": 600,
+        "taxiPerKm": 300
+      }
+    },
+    "attractions": {
+      "totalCount": 180,
+      "freeAttractions": 85,
+      "worldHeritageSites": 17,
+      "museums": 25,
+      "temples": 80,
+      "parks": 20,
+      "topAttractions": [
+        {
+          "name": "Fushimi Inari Shrine",
+          "nameJP": "伏見稲荷大社",
+          "description": "Thousands of red torii gates on mountainside",
+          "category": "temple",
+          "estimatedTime": "3-4 hours",
+          "cost": "free",
+          "bestTimeToVisit": "Early morning",
+          "accessibility": "challenging"
+        },
+        {
+          "name": "Kinkaku-ji (Golden Pavilion)",
+          "nameJP": "金閣寺",
+          "description": "Stunning golden temple reflected in pond",
+          "category": "temple",
+          "estimatedTime": "1-2 hours",
+          "cost": "low",
+          "bestTimeToVisit": "Morning",
+          "accessibility": "easy"
+        },
+        {
+          "name": "Arashiyama Bamboo Forest",
+          "nameJP": "嵐山竹林",
+          "description": "Mystical bamboo groves and walking paths",
+          "category": "park",
+          "estimatedTime": "1-2 hours",
+          "cost": "free",
+          "bestTimeToVisit": "Early morning",
+          "accessibility": "easy"
+        }
+      ],
+      "uniqueExperiences": [
+        "Geisha spotting in Gion district",
+        "Traditional tea ceremony",
+        "Zen meditation at temples",
+        "Kaiseki dining experience",
+        "Kimono rental and photo shoot"
+      ]
+    },
+    "food": {
+      "diversityScore": 8.5,
+      "michelinStars": 65,
+      "streetFoodScore": 7.0,
+      "vegetarianFriendly": 8.5,
+      "specialties": [
+        {
+          "name": "Kaiseki",
+          "nameJP": "懐石",
+          "description": "Traditional multi-course haute cuisine",
+          "category": "main",
+          "difficulty": "acquired_taste",
+          "whereToFind": ["Kikunoi", "Yoshikawa", "High-end restaurants"]
+        },
+        {
+          "name": "Tofu Cuisine",
+          "nameJP": "湯豆腐",
+          "description": "Delicate Buddhist temple cuisine",
+          "category": "main",
+          "difficulty": "easy",
+          "whereToFind": ["Arashiyama", "Temple restaurants"]
+        },
+        {
+          "name": "Matcha and Wagashi",
+          "nameJP": "抹茶と和菓子",
+          "description": "Traditional tea and sweets",
+          "category": "dessert",
+          "difficulty": "easy",
+          "whereToFind": ["Tea houses", "Gion district"]
+        }
+      ],
+      "marketCount": 5,
+      "restaurantDensity": 680
+    },
+    "transportation": {
+      "efficiency": 8.0,
+      "coverage": 7.5,
+      "easeOfUse": 8.5,
+      "punctuality": 9.5,
+      "subwayLines": 2,
+      "busLines": 40,
+      "walkability": 9.0,
+      "bikeability": 8.5,
+      "airportConnections": [
+        {
+          "airport": "Kansai (KIX)",
+          "methods": ["Express train", "Bus"],
+          "time": "75 minutes",
+          "cost": 1180
+        },
+        {
+          "airport": "Itami",
+          "methods": ["Bus"],
+          "time": "55 minutes",
+          "cost": 840
+        }
+      ]
+    },
+    "culture": {
+      "traditionalScore": 9.8,
+      "modernScore": 6.5,
+      "artScene": 8.5,
+      "festivalsCount": 35,
+      "culturalSites": 120,
+      "languageBarrier": 7.0,
+      "localCustoms": [
+        "Respect temple etiquette",
+        "Quiet and respectful behavior",
+        "Photography restrictions at temples",
+        "Bow before entering shrines",
+        "Preserve traditional atmosphere"
+      ],
+      "culturalEvents": [
+        {
+          "name": "Gion Matsuri",
+          "nameJP": "祇園祭",
+          "description": "Japan's most famous festival",
+          "season": "summer",
+          "duration": "1 month",
+          "significance": "international"
+        },
+        {
+          "name": "Hanami",
+          "nameJP": "花見",
+          "description": "Cherry blossom viewing parties",
+          "season": "spring",
+          "duration": "2 weeks",
+          "significance": "national"
+        }
+      ]
+    },
+    "nightlife": {
+      "vibrancy": 6.5,
+      "variety": 7.0,
+      "safety": 9.5,
+      "lastTrainTime": "23:30",
+      "barCount": 3000,
+      "clubCount": 50,
+      "izakayaCount": 2500,
+      "uniqueVenues": [
+        "Traditional tea houses in Gion",
+        "Sake bars in Pontocho Alley",
+        "Rooftop bars with temple views",
+        "Jazz clubs in downtown",
+        "Traditional ryokan experiences"
+      ],
+      "districts": [
+        {
+          "name": "Gion",
+          "nameJP": "祇園",
+          "description": "Historic geisha district",
+          "vibe": "traditional",
+          "bestFor": ["Cultural enthusiasts", "Couples"],
+          "priceRange": "expensive"
+        },
+        {
+          "name": "Pontocho Alley",
+          "nameJP": "先斗町",
+          "description": "Narrow alley with traditional restaurants",
+          "vibe": "traditional",
+          "bestFor": ["Romantic dining", "Traditional experience"],
+          "priceRange": "expensive"
+        }
+      ]
+    }
+  },
+  "highlights": [
+    "2,000 temples and shrines",
+    "17 UNESCO World Heritage Sites",
+    "Traditional culture and arts",
+    "Beautiful seasonal changes",
+    "Peaceful and spiritual atmosphere"
+  ],
+  "bestFor": [
+    "Culture and history enthusiasts",
+    "Spiritual seekers",
+    "Photography lovers",
+    "Traditional experience seekers",
+    "Couples and romantic travelers"
+  ],
+  "notIdealFor": [
+    "Party and nightlife seekers",
+    "Modern city enthusiasts",
+    "Very budget travelers",
+    "Those preferring fast-paced environments"
+  ],
+  "slug": "kyoto",
+  "colorTheme": "#577590",
+  "lastUpdated": "2025-01-15T00:00:00Z"
+}

@@ -1,0 +1,235 @@
+{
+  "id": "osaka",
+  "name": "Osaka",
+  "displayName": "Osaka (大阪)",
+  "description": "Japan's kitchen and the heart of Kansai culture, famous for incredible street food, friendly locals, and vibrant entertainment districts.",
+  "heroImage": {
+    "url": "/images/osaka-hero.jpg",
+    "alt": "Osaka Castle with cherry blossoms and modern cityscape",
+    "credit": "Photo by Unsplash"
+  },
+  "quickFacts": {
+    "population": 2691000,
+    "prefecture": "Osaka",
+    "establishedYear": 1889,
+    "area": 225,
+    "averageTemp": {
+      "summer": 28,
+      "winter": 7
+    }
+  },
+  "coordinates": {
+    "latitude": 34.6937,
+    "longitude": 135.5023
+  },
+  "metrics": {
+    "cost": {
+      "overallIndex": 6.8,
+      "accommodation": {
+        "budget": 2800,
+        "mid": 6500,
+        "luxury": 18000
+      },
+      "dailyBudget": {
+        "budget": 4500,
+        "mid": 9000,
+        "luxury": 22000
+      },
+      "meals": {
+        "streetFood": 600,
+        "restaurant": 2000,
+        "fineDining": 12000
+      },
+      "transport": {
+        "dayPass": 700,
+        "taxiPerKm": 280
+      }
+    },
+    "attractions": {
+      "totalCount": 95,
+      "freeAttractions": 30,
+      "worldHeritageSites": 0,
+      "museums": 20,
+      "temples": 18,
+      "parks": 12,
+      "topAttractions": [
+        {
+          "name": "Osaka Castle",
+          "nameJP": "大阪城",
+          "description": "Historic castle with beautiful grounds",
+          "category": "landmark",
+          "estimatedTime": "3 hours",
+          "cost": "medium",
+          "bestTimeToVisit": "Morning",
+          "accessibility": "easy"
+        },
+        {
+          "name": "Dotonbori",
+          "nameJP": "道頓堀",
+          "description": "Famous entertainment and food district",
+          "category": "district",
+          "estimatedTime": "Half day",
+          "cost": "free",
+          "bestTimeToVisit": "Evening",
+          "accessibility": "easy"
+        },
+        {
+          "name": "Universal Studios Japan",
+          "nameJP": "ユニバーサル・スタジオ・ジャパン",
+          "description": "Theme park with Harry Potter world",
+          "category": "experience",
+          "estimatedTime": "Full day",
+          "cost": "high",
+          "bestTimeToVisit": "Early morning",
+          "accessibility": "easy"
+        }
+      ],
+      "uniqueExperiences": [
+        "Street food crawl in Dotonbori",
+        "Takoyaki making class",
+        "Osaka Castle night illumination",
+        "Kuromon Ichiba Market exploration",
+        "Sumiyoshi Taisha shrine visit"
+      ]
+    },
+    "food": {
+      "diversityScore": 9.0,
+      "michelinStars": 95,
+      "streetFoodScore": 9.5,
+      "vegetarianFriendly": 6.0,
+      "specialties": [
+        {
+          "name": "Takoyaki",
+          "nameJP": "たこ焼き",
+          "description": "Octopus balls, Osaka's signature dish",
+          "category": "snack",
+          "difficulty": "easy",
+          "whereToFind": ["Dotonbori", "Street stalls", "Konamon Museum"]
+        },
+        {
+          "name": "Okonomiyaki",
+          "nameJP": "お好み焼き",
+          "description": "Savory pancake with various toppings",
+          "category": "main",
+          "difficulty": "easy",
+          "whereToFind": ["Mizuno", "Daruma", "Local restaurants"]
+        },
+        {
+          "name": "Kushikatsu",
+          "nameJP": "串カツ",
+          "description": "Deep-fried skewered meat and vegetables",
+          "category": "main",
+          "difficulty": "easy",
+          "whereToFind": ["Shinsekai", "Kushikatsu Daruma"]
+        }
+      ],
+      "marketCount": 8,
+      "restaurantDensity": 920
+    },
+    "transportation": {
+      "efficiency": 9.0,
+      "coverage": 8.5,
+      "easeOfUse": 8.0,
+      "punctuality": 9.8,
+      "subwayLines": 8,
+      "busLines": 60,
+      "walkability": 8.5,
+      "bikeability": 7.5,
+      "airportConnections": [
+        {
+          "airport": "Kansai (KIX)",
+          "methods": ["Express train", "Bus"],
+          "time": "45 minutes",
+          "cost": 920
+        },
+        {
+          "airport": "Itami",
+          "methods": ["Bus", "Train"],
+          "time": "30 minutes",
+          "cost": 640
+        }
+      ]
+    },
+    "culture": {
+      "traditionalScore": 8.0,
+      "modernScore": 8.5,
+      "artScene": 7.5,
+      "festivalsCount": 18,
+      "culturalSites": 45,
+      "languageBarrier": 7.5,
+      "localCustoms": [
+        "Stand right on escalators",
+        "More casual and friendly atmosphere",
+        "Food-focused culture",
+        "Bargaining at markets",
+        "Loud and expressive conversations accepted"
+      ],
+      "culturalEvents": [
+        {
+          "name": "Tenjin Matsuri",
+          "nameJP": "天神祭",
+          "description": "One of Japan's top three festivals",
+          "season": "summer",
+          "duration": "2 days",
+          "significance": "national"
+        }
+      ]
+    },
+    "nightlife": {
+      "vibrancy": 8.5,
+      "variety": 8.0,
+      "safety": 9.0,
+      "lastTrainTime": "00:00",
+      "barCount": 8000,
+      "clubCount": 120,
+      "izakayaCount": 5500,
+      "uniqueVenues": [
+        "Hozenji Yokocho alley bars",
+        "Shinsekai entertainment district",
+        "Riverside beer gardens",
+        "Karaoke in Namba",
+        "Rooftop bars in Umeda"
+      ],
+      "districts": [
+        {
+          "name": "Dotonbori",
+          "nameJP": "道頓堀",
+          "description": "Neon-lit entertainment district",
+          "vibe": "modern",
+          "bestFor": ["Tourists", "Food lovers"],
+          "priceRange": "mid"
+        },
+        {
+          "name": "Hozenji Yokocho",
+          "nameJP": "法善寺横丁",
+          "description": "Traditional narrow alley with historic bars",
+          "vibe": "traditional",
+          "bestFor": ["Locals", "Traditional experience"],
+          "priceRange": "mid"
+        }
+      ]
+    }
+  },
+  "highlights": [
+    "Japan's kitchen with incredible street food",
+    "Friendliest people in Japan",
+    "More affordable than Tokyo",
+    "Rich cultural heritage and festivals",
+    "Great base for exploring Kansai region"
+  ],
+  "bestFor": [
+    "Food enthusiasts",
+    "Budget-conscious travelers",
+    "Culture seekers",
+    "First-time Japan visitors",
+    "Family travelers"
+  ],
+  "notIdealFor": [
+    "Luxury seekers",
+    "Those preferring quiet environments",
+    "Visitors focused on modern attractions"
+  ],
+  "slug": "osaka",
+  "colorTheme": "#f3722c",
+  "lastUpdated": "2025-01-15T00:00:00Z"
+}

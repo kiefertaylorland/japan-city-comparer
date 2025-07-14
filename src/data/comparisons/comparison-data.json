@@ -1,0 +1,133 @@
+{
+  "categories": [
+    {
+      "categoryId": "cost",
+      "values": {
+        "tokyo": 8.5,
+        "osaka": 6.8,
+        "kyoto": 7.2
+      },
+      "labels": {
+        "tokyo": "Very Expensive",
+        "osaka": "Moderate",
+        "kyoto": "Expensive"
+      },
+      "insights": [
+        "Tokyo is 25% more expensive than Osaka",
+        "Accommodation costs are highest in Tokyo",
+        "Kyoto falls between Tokyo and Osaka for overall costs",
+        "Street food is most affordable in Osaka"
+      ],
+      "winner": "osaka",
+      "reasoning": "Osaka offers the best value for money with lower accommodation and dining costs"
+    },
+    {
+      "categoryId": "attractions",
+      "values": {
+        "tokyo": 150,
+        "osaka": 95,
+        "kyoto": 180
+      },
+      "labels": {
+        "tokyo": "World Class",
+        "osaka": "Excellent",
+        "kyoto": "Exceptional"
+      },
+      "insights": [
+        "Kyoto has the most attractions with 180 sites",
+        "Tokyo offers the most diverse modern attractions",
+        "Kyoto has 17 UNESCO World Heritage Sites",
+        "Osaka focuses on entertainment and food experiences"
+      ],
+      "winner": "kyoto",
+      "reasoning": "Kyoto has the highest concentration of cultural and historical attractions"
+    },
+    {
+      "categoryId": "food",
+      "values": {
+        "tokyo": 9.5,
+        "osaka": 9.0,
+        "kyoto": 8.5
+      },
+      "labels": {
+        "tokyo": "World's Best",
+        "osaka": "Incredible",
+        "kyoto": "Refined"
+      },
+      "insights": [
+        "Tokyo has the most Michelin stars globally",
+        "Osaka is known as 'Japan's Kitchen'",
+        "Kyoto offers traditional kaiseki cuisine",
+        "Street food is best in Osaka"
+      ],
+      "winner": "tokyo",
+      "reasoning": "Tokyo has the most diverse and internationally acclaimed dining scene"
+    },
+    {
+      "categoryId": "transportation",
+      "values": {
+        "tokyo": 9.8,
+        "osaka": 9.0,
+        "kyoto": 8.0
+      },
+      "labels": {
+        "tokyo": "World Class",
+        "osaka": "Excellent",
+        "kyoto": "Very Good"
+      },
+      "insights": [
+        "Tokyo has the most extensive train network",
+        "All cities have excellent punctuality",
+        "Kyoto is more walkable and bike-friendly",
+        "Tokyo can be overwhelming for first-time visitors"
+      ],
+      "winner": "tokyo",
+      "reasoning": "Tokyo has the most comprehensive and efficient transportation system"
+    },
+    {
+      "categoryId": "culture",
+      "values": {
+        "tokyo": 7.5,
+        "osaka": 8.0,
+        "kyoto": 9.8
+      },
+      "labels": {
+        "tokyo": "Modern Mix",
+        "osaka": "Authentic",
+        "kyoto": "Traditional Heart"
+      },
+      "insights": [
+        "Kyoto is Japan's cultural capital",
+        "Tokyo blends modern and traditional elements",
+        "Osaka has authentic local culture",
+        "Kyoto offers the most traditional experiences"
+      ],
+      "winner": "kyoto",
+      "reasoning": "Kyoto preserves Japan's most authentic traditional culture and heritage"
+    },
+    {
+      "categoryId": "nightlife",
+      "values": {
+        "tokyo": 9.5,
+        "osaka": 8.5,
+        "kyoto": 6.5
+      },
+      "labels": {
+        "tokyo": "Electric",
+        "osaka": "Lively",
+        "kyoto": "Peaceful"
+      },
+      "insights": [
+        "Tokyo has the most diverse nightlife options",
+        "Osaka offers friendly, local nightlife experiences",
+        "Kyoto focuses on traditional evening experiences",
+        "Tokyo nightlife operates latest into the night"
+      ],
+      "winner": "tokyo",
+      "reasoning": "Tokyo offers the most vibrant and diverse nightlife scene in Japan"
+    }
+  ],
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "dataSource": "Internal Research & Government Statistics",
+  "methodology": "Data collected from official tourism boards, hotel booking sites, and local research"
+}

@@ -1,0 +1,171 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  /* Color palette from design system */
+  --color-white: #ffffff;
+  --color-light-gray: #f8f9fa;
+  --color-charcoal-gray: #2c2c2c;
+  --color-indigo: #264653;
+  --color-sakura-pink: #f7c6c7;
+  --color-gold: #e9c46a;
+  --color-tokyo: #f94144;
+  --color-osaka: #f3722c;
+  --color-kyoto: #577590;
+
+  /* Typography */
+  --font-primary: 'Inter', 'Noto Sans JP', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    font-family: var(--font-primary);
+  }
+  
+  body {
+    @apply text-charcoal-gray bg-white;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-charcoal-gray;
+  }
+  
+  h1 {
+    @apply text-4xl mb-6;
+  }
+  
+  h2 {
+    @apply text-3xl mb-5;
+  }
+  
+  h3 {
+    @apply text-2xl mb-4;
+  }
+  
+  h4 {
+    @apply text-xl mb-3;
+  }
+  
+  p {
+    @apply mb-4 text-base;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus {
+    @apply outline-none ring-2 ring-indigo ring-offset-2;
+  }
+  
+  button:focus,
+  a:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    @apply ring-2 ring-indigo ring-offset-2;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-indigo text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-colors duration-200 focus:ring-2 focus:ring-indigo focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-light-gray text-charcoal-gray px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-200 focus:ring-2 focus:ring-indigo focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-sm p-6 hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .city-card-tokyo {
+    @apply border-l-4 border-tokyo-red;
+  }
+  
+  .city-card-osaka {
+    @apply border-l-4 border-osaka-orange;
+  }
+  
+  .city-card-kyoto {
+    @apply border-l-4 border-kyoto-blue;
+  }
+  
+  .chart-container {
+    @apply max-w-md mx-auto rounded-xl bg-white p-6 shadow-sm;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .container-custom {
+    @apply max-w-screen-lg mx-auto px-4 py-6;
+  }
+  
+  /* Custom scrollbar for webkit browsers */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb #f3f4f6;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f3f4f6;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 3px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #d1d5db;
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
