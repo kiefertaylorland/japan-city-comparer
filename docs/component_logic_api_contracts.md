@@ -1,7 +1,9 @@
 # Component Logic & API Contracts
+
 ## Japan City Comparison App
 
 ### 🎯 Overview
+
 This document defines the data contracts, component interfaces, and API specifications for the Japan City Comparison App, ensuring consistent data flow between components and potential future API integrations.
 
 ---
@@ -11,6 +13,7 @@ This document defines the data contracts, component interfaces, and API specific
 ### 1. `<CategoryComparisonCard />` Component
 
 #### Props Interface
+
 ```typescript
 interface CategoryComparisonCardProps {
   category: {
@@ -52,7 +55,8 @@ interface CategoryComparisonCardProps {
 }
 ```
 
-#### Usage Example
+#### CategoryComparisonCard Usage Example
+
 ```tsx
 <CategoryComparisonCard
   category={{
@@ -82,7 +86,8 @@ interface CategoryComparisonCardProps {
 
 ### 2. `<CityComparisonTable />` Component
 
-#### Props Interface
+#### CityComparisonTable Props Interface
+
 ```typescript
 interface CityComparisonTableProps {
   cities: CityComparisonData[];
@@ -127,7 +132,8 @@ interface CategoryDefinition {
 }
 ```
 
-#### Usage Example
+#### CityComparisonTable Usage Example
+
 ```tsx
 <CityComparisonTable
   cities={[
@@ -163,7 +169,8 @@ interface CategoryDefinition {
 
 ### 3. `<CityCard />` Component
 
-#### Props Interface
+#### CityCard Props Interface
+
 ```typescript
 interface CityCardProps {
   city: {
@@ -192,7 +199,8 @@ interface CityCardProps {
 }
 ```
 
-#### Usage Example
+#### CityCard Usage Example
+
 ```tsx
 <CityCard
   city={{
@@ -214,7 +222,8 @@ interface CityCardProps {
 
 ### 4. `<ChartComparison />` Component
 
-#### Props Interface
+#### ChartComparison Props Interface
+
 ```typescript
 interface ChartComparisonProps {
   data: ChartDataPoint[];
@@ -272,6 +281,7 @@ interface ChartConfiguration {
 ```
 
 #### Usage Example
+
 ```tsx
 <ChartComparison
   data={[
@@ -297,7 +307,8 @@ interface ChartConfiguration {
 
 ### 5. `<Navbar />` Component
 
-#### Props Interface
+#### Navbar Props Interface
+
 ```typescript
 interface NavbarProps {
   currentPage: string;
@@ -323,7 +334,8 @@ interface NavigationItem {
 
 ### 6. `<CityDetailHero />` Component
 
-#### Props Interface
+#### CityDetailHero Props Interface
+
 ```typescript
 interface CityDetailHeroProps {
   city: {
@@ -365,6 +377,7 @@ interface BreadcrumbItem {
 ### Static Data Service (Current Implementation)
 
 #### Data Loading Service
+
 ```typescript
 class DataService {
   // City data loading
@@ -468,6 +481,7 @@ class DataService {
 ### Future API Contracts (For Dynamic Data)
 
 #### REST API Endpoints
+
 ```typescript
 // GET /api/cities
 interface GetCitiesResponse {
@@ -518,6 +532,7 @@ interface PostFeedbackResponse {
 ```
 
 #### GraphQL Schema (Alternative)
+
 ```graphql
 type City {
   id: ID!
@@ -562,6 +577,7 @@ type Mutation {
 ## 🎯 React Hooks & Custom Logic
 
 ### Data Fetching Hooks
+
 ```typescript
 // Hook for city data
 export const useCityData = (cityId: string) => {
@@ -648,6 +664,7 @@ export const useCitiesSummary = () => {
 ```
 
 ### Utility Functions
+
 ```typescript
 // Chart data transformation utilities
 export const transformDataForChart = (
@@ -702,6 +719,7 @@ export const formatDisplayValue = (
 ## 🔄 Error Handling & Loading States
 
 ### Error Boundaries
+
 ```typescript
 interface ErrorBoundaryProps {
   children: React.ReactNode;
@@ -738,6 +756,7 @@ export class ComponentErrorBoundary extends React.Component<
 ```
 
 ### Loading States
+
 ```typescript
 interface LoadingStateProps {
   loading: boolean;
@@ -765,5 +784,3 @@ export const LoadingState: React.FC<LoadingStateProps> = ({
   return <>{children}</>;
 };
 ```
-
-This comprehensive component logic and API contract documentation provides clear interfaces for all components, ensuring consistent data flow and making future API integration straightforward.
