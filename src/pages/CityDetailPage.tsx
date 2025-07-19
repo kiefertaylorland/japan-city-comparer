@@ -295,7 +295,7 @@ const CityDetailPage: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/" className="btn-primary bg-white text-indigo hover:bg-gray-100">
+            <Link to="/" className="btn-primary bg-white text-charcoal-gray hover:bg-gray-100">
               View Full Comparison
             </Link>
             
@@ -304,7 +304,7 @@ const CityDetailPage: React.FC = () => {
                 <Link
                   key={otherCityId}
                   to={`/city/${otherCityId}`}
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-indigo"
+                  className="btn-secondary border-white text-white hover:bg-white hover:text-charcoal-gray"
                 >
                   {otherCityId.charAt(0).toUpperCase() + otherCityId.slice(1)}
                 </Link>
