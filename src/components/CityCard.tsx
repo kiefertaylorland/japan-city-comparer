@@ -44,6 +44,32 @@ const CityCard: React.FC<CityCardProps> = ({
     return population.toString();
   };
 
+  const getCityFallbackImage = (cityId: string) => {
+    // Create simple gradient backgrounds for each city using their theme colors
+    const createSVGDataURL = (color1: string, color2: string, cityName: string) => {
+      const svg = `
+        <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:${color1};stop-opacity:1" />
+              <stop offset="100%" style="stop-color:${color2};stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="300" fill="url(#grad)"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24px" font-weight="bold">${cityName}</text>
+        </svg>
+      `.trim();
+      return `data:image/svg+xml;base64,${btoa(svg)}`;
+    };
+
+    const fallbackImages = {
+      tokyo: createSVGDataURL('#f94144', '#f3722c', 'Tokyo'),
+      osaka: createSVGDataURL('#f3722c', '#f9844a', 'Osaka'), 
+      kyoto: createSVGDataURL('#577590', '#43aa8b', 'Kyoto')
+    };
+    return fallbackImages[cityId.toLowerCase() as keyof typeof fallbackImages] || fallbackImages.tokyo;
+  };
+
   const handleExploreClick = () => {
     if (onExploreClick) {
       onExploreClick(city.id);
@@ -71,8 +97,8 @@ const CityCard: React.FC<CityCardProps> = ({
           alt={city.image.alt}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           onError={(e) => {
-            // Fallback to a placeholder if image fails to load
-            e.currentTarget.src = `https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop&crop=center`;
+            // Fallback to city-specific image if local image fails to load
+            e.currentTarget.src = getCityFallbackImage(city.id);
           }}
         />
         <div 

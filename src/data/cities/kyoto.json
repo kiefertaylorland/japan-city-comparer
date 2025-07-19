@@ -4,7 +4,7 @@
   "displayName": "Kyoto (京都)",
   "description": "Japan's ancient capital, home to thousands of temples, traditional culture, and the epitome of Japanese aesthetics and spirituality.",
   "heroImage": {
-    "url": "/images/kyoto-hero.jpg",
+    "url": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop&crop=center",
     "alt": "Fushimi Inari shrine with thousands of red torii gates",
     "credit": "Photo by Unsplash"
   },

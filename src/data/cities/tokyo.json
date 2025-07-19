@@ -4,7 +4,7 @@
   "displayName": "Tokyo (東京)",
   "description": "Japan's bustling capital city, where ultra-modern skyscrapers meet traditional temples and world-class cuisine.",
   "heroImage": {
-    "url": "/images/tokyo-hero.jpg",
+    "url": "https://images.unsplash.com/photo-1554797589-7241bb691973?w=400&h=300&fit=crop&crop=center",
     "alt": "Tokyo skyline at sunset with Mount Fuji in the background",
     "credit": "Photo by Unsplash"
   },
