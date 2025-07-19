@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Crown, TrendingUp, TrendingDown } from 'lucide-react';
 import { formatCategoryValue, getRankSuffix } from '../utils/chartUtils';
+import { getCityFallbackImage } from '../utils/cityFallbackImages';
 import type { CityComparisonData, Category } from '../types';
 
 interface CityComparisonTableProps {
@@ -78,7 +79,9 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
                       alt={city.image.alt}
                       className="w-16 h-16 rounded-lg object-cover"
                       onError={(e) => {
-                        e.currentTarget.src = `https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=100&h=100&fit=crop`;
+                        const fallback = getCityFallbackImage(city.id);
+                        e.currentTarget.src = fallback.url;
+                        e.currentTarget.alt = fallback.alt;
                       }}
                     />
                     <div>
@@ -147,7 +150,9 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
                 alt={city.image.alt}
                 className="w-12 h-12 rounded-lg object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = `https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=100&h=100&fit=crop`;
+                  const fallback = getCityFallbackImage(city.id);
+                  e.currentTarget.src = fallback.url;
+                  e.currentTarget.alt = fallback.alt;
                 }}
               />
               <div>
