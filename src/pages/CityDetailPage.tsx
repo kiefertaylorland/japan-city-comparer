@@ -287,7 +287,7 @@ const CityDetailPage: React.FC = () => {
       {/* Compare with Other Cities */}
       <section className="py-12 bg-indigo text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-light-gray">
             Compare {city.name} with Other Cities
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
