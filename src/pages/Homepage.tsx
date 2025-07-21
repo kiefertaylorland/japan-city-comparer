@@ -214,7 +214,7 @@ const Homepage: React.FC = () => {
       <section className="py-16 bg-indigo text-white">
         <div className="container-custom text-center">
           <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Ready to Plan Your Japan Adventure?
             </h2>
             <p className="text-xl text-blue-100">
