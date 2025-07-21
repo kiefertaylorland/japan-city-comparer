@@ -83,7 +83,8 @@ class DataService {
       },
       metrics: this.transformCityMetrics(city, comparison),
       colorTheme: city.colorTheme,
-      highlights: city.highlights
+      highlights: city.highlights,
+      bestFor: city.bestFor
     }));
   }
 

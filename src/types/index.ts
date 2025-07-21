@@ -277,6 +277,7 @@ export interface CityComparisonData {
   };
   colorTheme: string;
   highlights: string[];
+  bestFor: string[];
 }
 
 export interface NavigationItem {

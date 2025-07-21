@@ -126,7 +126,7 @@ const Homepage: React.FC = () => {
                       establishedYear: 1000 // Default value
                     },
                     highlights: city.highlights,
-                    bestFor: [],
+                    bestFor: city.bestFor,
                     colorTheme: city.colorTheme
                   }}
                   variant="summary"
