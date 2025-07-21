@@ -4,7 +4,7 @@
   "displayName": "Kyoto (京都)",
   "description": "Japan's ancient capital, home to thousands of temples, traditional culture, and the epitome of Japanese aesthetics and spirituality.",
   "heroImage": {
-    "url": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop&crop=center",
+    "url": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=1200&h=600&fit=crop&q=80",
     "alt": "Fushimi Inari shrine with thousands of red torii gates",
     "credit": "Photo by Unsplash"
   },
@@ -223,7 +223,8 @@
     "17 UNESCO World Heritage Sites",
     "Traditional culture and arts",
     "Beautiful seasonal changes",
-    "Peaceful and spiritual atmosphere"
+    "Peaceful and spiritual atmosphere",
+    "Japan's capital for over 1,000 years"
   ],
   "bestFor": [
     "Culture and history enthusiasts",
