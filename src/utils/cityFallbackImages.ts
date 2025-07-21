@@ -5,15 +5,15 @@
 // City-specific fallback images from Unsplash
 const CITY_FALLBACK_IMAGES = {
   tokyo: {
-    url: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=100&h=100&fit=crop',
+    url: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=100&h=100&fit=crop&auto=format&q=75',
     alt: 'Tokyo skyline at sunset with Mount Fuji in the background'
   },
   osaka: {
-    url: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=100&h=100&fit=crop',
+    url: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=100&h=100&fit=crop&auto=format&q=75',
     alt: 'Osaka Castle with cherry blossoms and modern cityscape'
   },
   kyoto: {
-    url: 'https://images.unsplash.com/photo-1528164344705-47542687000d?w=100&h=100&fit=crop',
+    url: 'https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=100&h=100&fit=crop&auto=format&q=75',
     alt: 'Fushimi Inari shrine with thousands of red torii gates'
   }
 };
