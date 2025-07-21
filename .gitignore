@@ -24,6 +24,7 @@ pids
 *.pid
 *.seed
 *.pid.lock
+
 # Environment files
 .env
 .env.local
@@ -54,3 +55,10 @@ Thumbs.db
 
 # Coverage directory used by tools like istanbul
 coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# ESLint cache
+.eslintcache
