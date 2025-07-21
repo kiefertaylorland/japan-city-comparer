@@ -88,7 +88,7 @@ const CityDetailPage: React.FC = () => {
                 <span>Back to comparison</span>
               </Link>
               
-              <h1 className="text-4xl md:text-6xl font-bold">
+              <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)'}}>
                 {city.displayName}
               </h1>
               
