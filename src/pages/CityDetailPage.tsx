@@ -304,7 +304,7 @@ const CityDetailPage: React.FC = () => {
                 <Link
                   key={otherCityId}
                   to={`/city/${otherCityId}`}
-                  className="border-2 border-white bg-transparent text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-charcoal-gray transition-colors duration-200 focus:ring-2 focus:ring-white focus:ring-offset-2"
+                  className="btn-secondary border-white text-white hover:bg-white hover:text-charcoal-gray"
                 >
                   {otherCityId.charAt(0).toUpperCase() + otherCityId.slice(1)}
                 </Link>
