@@ -4,7 +4,7 @@
   "displayName": "Tokyo (東京)",
   "description": "Japan's bustling capital city, where ultra-modern skyscrapers meet traditional temples and world-class cuisine.",
   "heroImage": {
-    "url": "/images/tokyo-hero.jpg",
+    "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=600&fit=crop&q=80",
     "alt": "Tokyo skyline at sunset with Mount Fuji in the background",
     "credit": "Photo by Unsplash"
   },
@@ -207,7 +207,8 @@
     "Cutting-edge technology and innovation",
     "Incredible food scene with most Michelin stars",
     "Perfect blend of traditional and modern culture",
-    "Efficient public transportation system"
+    "Efficient public transportation system",
+    "Global center of anime, manga, and pop culture"
   ],
   "bestFor": [
     "First-time visitors to Japan",
