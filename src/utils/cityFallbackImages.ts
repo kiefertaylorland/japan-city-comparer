@@ -9,8 +9,8 @@ const CITY_FALLBACK_IMAGES = {
     alt: 'Tokyo skyline at sunset with Mount Fuji in the background'
   },
   osaka: {
-    url: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=100&h=100&fit=crop&auto=format&q=75',
-    alt: 'Osaka Castle with cherry blossoms and modern cityscape'
+    url: 'https://images.unsplash.com/photo-1554804435-9306c0a49a3c?w=100&h=100&fit=crop&auto=format&q=75',
+    alt: 'Dotonbori neon signs and entertainment district at night in Osaka'
   },
   kyoto: {
     url: 'https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=100&h=100&fit=crop&auto=format&q=75',
