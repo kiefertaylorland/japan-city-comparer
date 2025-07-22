@@ -72,26 +72,26 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
                 onClick={() => handleCityClick(city.id)}
               >
                 {/* City Info */}
-                <td className="px-6 py-6">
+                <td className="px-6 py-6 align-middle">
                   <div className="flex items-center space-x-4">
                     <img
                       src={city.image.url}
                       alt={city.image.alt}
-                      className="w-16 h-16 rounded-lg object-cover"
+                      className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
                       onError={(e) => {
                         const fallback = getCityFallbackImage(city.id);
                         e.currentTarget.src = fallback.url;
                         e.currentTarget.alt = fallback.alt;
                       }}
                     />
-                    <div>
-                      <h3 className="font-semibold text-charcoal-gray">
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-charcoal-gray leading-tight">
                         {city.displayName}
                       </h3>
                       {showQuickFacts && (
                         <div className="text-sm text-gray-600 space-y-1 mt-1">
-                          <p>{formatPopulation(city.quickFacts.population)} people</p>
-                          <p>{city.quickFacts.prefecture} Prefecture</p>
+                          <p className="leading-tight">{formatPopulation(city.quickFacts.population)} people</p>
+                          <p className="leading-tight">{city.quickFacts.prefecture} Prefecture</p>
                         </div>
                       )}
                     </div>
@@ -106,15 +106,15 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
                   const { formatted, unit } = formatCategoryValue(metric.value, category.id);
                   
                   return (
-                    <td key={category.id} className="px-4 py-6 text-center">
-                      <div className="space-y-2">
+                    <td key={category.id} className="px-4 py-6 text-center align-middle">
+                      <div className="space-y-2 flex flex-col items-center justify-center min-h-[80px]">
                         {/* Value */}
-                        <div className="font-semibold text-charcoal-gray">
+                        <div className="font-semibold text-charcoal-gray leading-tight">
                           {formatted}{unit}
                         </div>
                         
                         {/* Label */}
-                        <div className="text-xs text-gray-600">
+                        <div className="text-xs text-gray-600 leading-tight text-center">
                           {metric.label}
                         </div>
                         
