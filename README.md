@@ -63,30 +63,6 @@ npm run build
 
 The build output will be in the `dist/` directory, ready for deployment to any static hosting service.
 
-## 🚀 Deployment
-
-This app works great with:
-
-- **Vercel** (recommended)
-- **Netlify**
-- Any static hosting provider
-
-## 📊 Data
-
-The application includes comprehensive data for:
-
-- **Cities**: Tokyo, Osaka, Kyoto with detailed metrics
-- **Categories**: Cost, attractions, food, transportation, culture, nightlife
-- **Comparisons**: Quantified rankings and visual comparisons
-
-## 🎨 Design System
-
-- **Tokyo**: Red (#f94144)
-- **Osaka**: Orange (#f3722c)
-- **Kyoto**: Blue (#577590)
-- **Typography**: Inter font family
-- **Spacing**: Consistent 4px grid system
-
 ## 🤝 Contributing
 
 1. Fork the repository
