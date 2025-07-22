@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { ArrowRight, Users, MapPin, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ interface CityCardProps {
   className?: string;
 }
 
-const CityCard: React.FC<CityCardProps> = ({
+const CityCard = memo<CityCardProps>(({
   city,
   variant = 'summary',
   showCTA = true,
@@ -212,6 +212,8 @@ const CityCard: React.FC<CityCardProps> = ({
       </div>
     </div>
   );
-};
+});
+
+CityCard.displayName = 'CityCard';
 
 export default CityCard;

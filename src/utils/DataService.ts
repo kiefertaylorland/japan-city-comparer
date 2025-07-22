@@ -6,28 +6,33 @@ import type {
   CityComparisonData 
 } from '../types';
 
-import tokyoData from '../data/cities/tokyo.json';
-import osakaData from '../data/cities/osaka.json';
-import kyotoData from '../data/cities/kyoto.json';
 import categoriesData from '../data/categories/categories.json';
 import comparisonData from '../data/comparisons/comparison-data.json';
 
 class DataService {
-  // City data loading
+  // City data loading with dynamic imports for better code splitting
   static async getCityData(cityId: string): Promise<City> {
     try {
-      switch (cityId.toLowerCase()) {
+      const cityLower = cityId.toLowerCase();
+      
+      let cityData;
+      switch (cityLower) {
         case 'tokyo':
-          return tokyoData as City;
+          cityData = await import('../data/cities/tokyo.json');
+          break;
         case 'osaka':
-          return osakaData as City;
+          cityData = await import('../data/cities/osaka.json');
+          break;
         case 'kyoto':
-          return kyotoData as City;
+          cityData = await import('../data/cities/kyoto.json');
+          break;
         default:
-          throw new Error(`City data not found: ${cityId}`);
+          throw new Error(`City not found: ${cityId}`);
       }
+      
+      return cityData.default as City;
     } catch (error) {
-      throw new Error(`City data not found: ${cityId}`);
+      throw new Error(`Failed to load city data for: ${cityId}`);
     }
   }
 
