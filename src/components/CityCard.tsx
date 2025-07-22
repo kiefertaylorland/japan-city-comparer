@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ArrowRight, Users, MapPin, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -34,6 +35,8 @@ const CityCard: React.FC<CityCardProps> = ({
   onExploreClick,
   className = ''
 }) => {
+  const [showAllBestFor, setShowAllBestFor] = useState(false);
+
   const formatPopulation = (population: number) => {
     if (population >= 1000000) {
       return `${(population / 1000000).toFixed(1)}M`;
@@ -74,6 +77,10 @@ const CityCard: React.FC<CityCardProps> = ({
     if (onExploreClick) {
       onExploreClick(city.id);
     }
+  };
+
+  const toggleBestForExpansion = () => {
+    setShowAllBestFor(!showAllBestFor);
   };
 
   const cardClasses = {
@@ -164,7 +171,7 @@ const CityCard: React.FC<CityCardProps> = ({
           <div className="space-y-2">
             <h4 className="font-semibold text-charcoal-gray text-sm">Best For</h4>
             <div className="flex flex-wrap gap-1">
-              {city.bestFor.slice(0, 3).map((item, index) => (
+              {(showAllBestFor ? city.bestFor : city.bestFor.slice(0, 3)).map((item, index) => (
                 <span
                   key={index}
                   className="text-xs bg-light-gray text-gray-700 px-2 py-1 rounded-full"
@@ -173,9 +180,13 @@ const CityCard: React.FC<CityCardProps> = ({
                 </span>
               ))}
               {city.bestFor.length > 3 && (
-                <span className="text-xs text-gray-500">
-                  +{city.bestFor.length - 3} more
-                </span>
+                <button
+                  onClick={toggleBestForExpansion}
+                  className="text-xs text-gray-500 hover:text-blue-600 hover:underline cursor-pointer transition-colors duration-200 px-1 py-0.5 rounded bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300"
+                  aria-label={showAllBestFor ? 'Show fewer options' : `Show ${city.bestFor.length - 3} more options`}
+                >
+                  {showAllBestFor ? 'show less' : `+${city.bestFor.length - 3} more`}
+                </button>
               )}
             </div>
           </div>
