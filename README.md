@@ -1,160 +1,103 @@
 # Japan City Comparer 🇯🇵
 
-A comprehensive web application to compare Tokyo, Osaka, and Kyoto across multiple categories to help travelers choose their perfect Japanese destination.
+A modern web application to compare Tokyo, Osaka, and Kyoto across multiple categories, helping travelers choose their perfect Japanese destination.
 
 ## ✨ Features
 
-- **Interactive City Comparison**: Side-by-side comparison across 6 key categories
-- **Detailed City Profiles**: Individual pages for Tokyo, Osaka, and Kyoto
-- **Visual Data Representation**: Charts and graphics for easy understanding
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
-- **Japanese Cultural Design**: Inspired by Japanese aesthetics and minimalism
-- **Accessibility Focused**: WCAG compliant with keyboard navigation support
+- **Side-by-side Comparison**: Compare cities across 6 key categories (cost, attractions, food, transportation, culture, nightlife)
+- **Detailed City Pages**: Individual profiles for each city with comprehensive information
+- **Interactive Charts**: Visual data representation with Recharts
+- **Responsive Design**: Optimized for all devices
+- **Japanese-inspired UI**: Clean design with cultural aesthetics
 
-## 🏗️ Architecture
-
-### Tech Stack
-- **Frontend**: React 18 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Charts**: Recharts
-- **Icons**: Lucide React
-- **Routing**: React Router
-
-### Project Structure
-```
-src/
-├── components/          # Reusable UI components
-├── pages/              # Route components
-├── data/               # JSON data files
-├── hooks/              # Custom React hooks
-├── types/              # TypeScript type definitions
-├── utils/              # Utility functions
-└── index.css           # Global styles and design system
-```
-
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+
+- Node.js 18+
+- npm
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd japan_city_comparer
-   ```
+```bash
+# Clone the repository
+git clone <repository-url>
+cd japan-city-comparer
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+# Install dependencies
+npm install
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+# Start development server
+npm run dev
+```
 
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-### Build for Production
+## 🛠️ Tech Stack
+
+- **React 18** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for styling
+- **React Router** for navigation
+- **Recharts** for data visualization
+- **Lucide React** for icons
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/          # Reusable UI components
+├── pages/              # Route components
+├── data/               # City and comparison data (JSON)
+├── hooks/              # Custom React hooks
+├── types/              # TypeScript definitions
+├── utils/              # Helper functions
+└── index.css           # Global styles
+```
+
+## 🏗️ Build for Production
 
 ```bash
 npm run build
 ```
 
-## 📊 Data Structure
+The build output will be in the `dist/` directory, ready for deployment to any static hosting service.
 
-The application uses a comprehensive data schema covering:
+## 🚀 Deployment
 
-- **Cities**: Tokyo, Osaka, Kyoto with detailed metrics
-- **Categories**: Cost, Attractions, Food, Transportation, Culture, Nightlife
-- **Metrics**: Quantified data for objective comparisons
-- **Content**: Descriptions, highlights, and recommendations
+This app works great with:
 
-## 🎨 Design System
-
-### Color Palette
-- **Tokyo**: #f94144 (Red)
-- **Osaka**: #f3722c (Orange)  
-- **Kyoto**: #577590 (Blue)
-- **Accents**: Sakura Pink (#f7c6c7), Gold (#e9c46a), Indigo (#264653)
-
-### Typography
-- **Primary Font**: Inter, Noto Sans JP
-- **Hierarchy**: Clear heading levels with consistent spacing
-
-### Components
-- Modular, reusable component architecture
-- Consistent styling with Tailwind utilities
-- Accessible form controls and navigation
-
-## 🧪 Testing
-
-```bash
-# Run linting
-npm run lint
-
-# Run type checking
-npx tsc --noEmit
-```
-
-## 📱 Responsive Design
-
-- **Mobile First**: Optimized for mobile devices
-- **Breakpoints**: sm (640px), md (768px), lg (1024px)
-- **Touch Friendly**: Large tap targets and intuitive gestures
-
-## ♿ Accessibility
-
-- Semantic HTML structure
-- ARIA labels and roles
-- Keyboard navigation support
-- High contrast colors
-- Alt text for images
-- Focus management
-
-## 🚢 Deployment
-
-The application is ready for deployment to:
 - **Vercel** (recommended)
 - **Netlify**
 - Any static hosting provider
 
-### Environment Variables
-```
-VITE_PUBLIC_BASE_URL=https://your-domain.com
-```
+## 📊 Data
 
-## 📈 Performance
+The application includes comprehensive data for:
 
-- **Lighthouse Score**: 90+ target
-- **Code Splitting**: Dynamic imports for routes
-- **Image Optimization**: WebP format with fallbacks
-- **Bundle Analysis**: Use `npm run build` to analyze
+- **Cities**: Tokyo, Osaka, Kyoto with detailed metrics
+- **Categories**: Cost, attractions, food, transportation, culture, nightlife
+- **Comparisons**: Quantified rankings and visual comparisons
+
+## 🎨 Design System
+
+- **Tokyo**: Red (#f94144)
+- **Osaka**: Orange (#f3722c)
+- **Kyoto**: Blue (#577590)
+- **Typography**: Inter font family
+- **Spacing**: Consistent 4px grid system
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+4. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- Design inspiration from Japanese aesthetics
-- Data compiled from official tourism sources
-- Images from Unsplash (placeholder implementation)
-- Built with modern React best practices
+MIT License
 
 ---
 
-**Made with ❤️ for travelers exploring Japan**
+Made with ❤️ for travelers exploring Japan

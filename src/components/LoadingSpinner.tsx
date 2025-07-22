@@ -1,10 +1,12 @@
+import { memo } from 'react';
+
 interface LoadingSpinnerProps {
   size?: 'small' | 'medium' | 'large';
   text?: string;
   className?: string;
 }
 
-const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
+const LoadingSpinner = memo<LoadingSpinnerProps>(({
   size = 'medium',
   text = 'Loading...',
   className = ''
@@ -23,6 +25,8 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
       )}
     </div>
   );
-};
+});
+
+LoadingSpinner.displayName = 'LoadingSpinner';
 
 export default LoadingSpinner;

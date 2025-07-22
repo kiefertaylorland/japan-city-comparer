@@ -50,7 +50,8 @@ export const useComparisonData = (categoryId?: string) => {
         const comparisonData = await DataService.getComparisonData();
         setData(comparisonData);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Unknown error');
+        console.error('Failed to load comparison data:', err);
+        setError('Failed to load comparison data');
       } finally {
         setLoading(false);
       }
@@ -81,7 +82,8 @@ export const useCitiesSummary = () => {
         const citiesData = await DataService.getAllCitiesSummary();
         setData(citiesData);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Unknown error');
+        console.error('Failed to load cities data:', err);
+        setError('Failed to load cities data');
       } finally {
         setLoading(false);
       }
