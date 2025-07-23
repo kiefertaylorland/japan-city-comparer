@@ -10,7 +10,7 @@ A modern web application to compare Tokyo, Osaka, and Kyoto across multiple cate
 - **Responsive Design**: Optimized for all devices
 - **Japanese-inspired UI**: Clean design with cultural aesthetics
 
-## Screenshots
+## 📸 Screenshots
 
 ![Screenshot 2025-07-22 at 6 35 52 PM](https://github.com/user-attachments/assets/b9bfb0e2-8701-4346-8bd0-d4477087e43c)
 ![Screenshot 2025-07-22 at 6 36 01 PM](https://github.com/user-attachments/assets/2f095c6c-b253-4a2b-9f4e-51e7471941be)
