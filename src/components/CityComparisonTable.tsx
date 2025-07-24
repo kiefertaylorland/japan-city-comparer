@@ -57,9 +57,11 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
               {categories.map((category) => (
                 <th 
                   key={category.id} 
-                  className="px-4 py-4 text-center text-sm font-semibold text-charcoal-gray"
+                  className="px-3 py-4 text-center text-sm font-semibold text-charcoal-gray min-w-[100px]"
                 >
-                  {category.displayName}
+                  <div className="break-words">
+                    {category.displayName}
+                  </div>
                 </th>
               ))}
             </tr>
@@ -106,25 +108,32 @@ const CityComparisonTable: React.FC<CityComparisonTableProps> = ({
                   const { formatted, unit } = formatCategoryValue(metric.value, category.id);
                   
                   return (
-                    <td key={category.id} className="px-4 py-6 text-center align-middle">
-                      <div className="space-y-2 flex flex-col items-center justify-center min-h-[80px]">
+                    <td key={category.id} className="px-3 py-6 text-center align-middle">
+                      <div className="space-y-1.5 flex flex-col items-center justify-center min-h-[80px] max-w-[100px] mx-auto">
                         {/* Value */}
-                        <div className="font-semibold text-charcoal-gray leading-tight">
+                        <div className="font-semibold text-charcoal-gray leading-tight text-sm">
                           {formatted}{unit}
                         </div>
                         
                         {/* Label */}
-                        <div className="text-xs text-gray-600 leading-tight text-center">
+                        <div className="text-xs text-gray-600 leading-tight text-center px-1">
                           {metric.label}
                         </div>
                         
                         {/* Rank */}
-                        <div className="flex items-center justify-center space-x-1">
-                          {getRankIcon(metric.rank)}
-                          <span className="text-xs text-gray-500">
-                            {getRankSuffix(metric.rank)}
-                          </span>
-                        </div>
+                        {metric.rank === 1 ? (
+                          <div className="flex items-center space-x-1 bg-gold bg-opacity-20 px-2 py-1 rounded-full">
+                            <span className="text-xs">🏆</span>
+                            <span className="text-xs font-medium text-charcoal-gray">Winner</span>
+                          </div>
+                        ) : (
+                          <div className="flex items-center justify-center space-x-1">
+                            {getRankIcon(metric.rank)}
+                            <span className="text-xs text-gray-500">
+                              {getRankSuffix(metric.rank)}
+                            </span>
+                          </div>
+                        )}
                       </div>
                     </td>
                   );
