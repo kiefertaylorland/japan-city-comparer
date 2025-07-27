@@ -2,8 +2,9 @@
 
 A modern web application to compare Tokyo, Osaka, and Kyoto across multiple categories, helping travelers choose their perfect Japanese destination.
 
+<p align="center">
 <img width="520" height="290" alt="japan-compare" src="https://github.com/user-attachments/assets/f63f17cb-2f68-42d5-88d5-60cfb51e24d1" />
-
+</p>
 
 ## ✨ Features
 
