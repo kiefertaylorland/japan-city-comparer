@@ -1,5 +1,4 @@
 import { Heart } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { ScrollToTopLink } from './ScrollToTopLink';
 
 interface FooterProps {

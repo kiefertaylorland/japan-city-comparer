@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import CityComparisonTable from '../components/CityComparisonTable';
 import CategoryComparisonCard from '../components/CategoryComparisonCard';
