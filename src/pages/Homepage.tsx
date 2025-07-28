@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import CityComparisonTable from '../components/CityComparisonTable';
 import CategoryComparisonCard from '../components/CategoryComparisonCard';
 import CityCard from '../components/CityCard';
 import LoadingSpinner from '../components/LoadingSpinner';
+import { ScrollToTopLink } from '../components/ScrollToTopLink';
 import { useCitiesSummary, useCategoryDefinitions, useComparisonData } from '../hooks/useData';
 
 const Homepage: React.FC = () => {
@@ -221,15 +223,15 @@ const Homepage: React.FC = () => {
               Choose your city and start exploring detailed guides, attractions, and insider tips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <a href="/city/tokyo" className="btn-primary bg-tokyo-red hover:bg-red-600">
+              <ScrollToTopLink to="/city/tokyo" className="btn-primary bg-tokyo-red hover:bg-red-600">
                 Explore Tokyo
-              </a>
-              <a href="/city/osaka" className="btn-primary bg-osaka-orange hover:bg-orange-600">
+              </ScrollToTopLink>
+              <ScrollToTopLink to="/city/osaka" className="btn-primary bg-osaka-orange hover:bg-orange-600">
                 Explore Osaka
-              </a>
-              <a href="/city/kyoto" className="btn-primary bg-kyoto-blue hover:bg-blue-700">
+              </ScrollToTopLink>
+              <ScrollToTopLink to="/city/kyoto" className="btn-primary bg-kyoto-blue hover:bg-blue-700">
                 Explore Kyoto
-              </a>
+              </ScrollToTopLink>
             </div>
           </div>
         </div>

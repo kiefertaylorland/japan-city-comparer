@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { ScrollToTopLink } from './ScrollToTopLink';
 import type { NavigationItem } from '../types';
 
 interface NavbarProps {
@@ -55,20 +56,23 @@ const Navbar: React.FC<NavbarProps> = ({ className = '' }) => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.id}
-                to={item.path}
-                className={`font-medium transition-colors duration-200 ${
-                  item.isActive
-                    ? 'text-indigo border-b-2 border-indigo pb-1'
-                    : 'text-charcoal-gray hover:text-indigo'
-                }`}
-                aria-current={item.isActive ? 'page' : undefined}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navigationItems.map((item) => {
+              const LinkComponent = item.path === '/' ? Link : ScrollToTopLink;
+              return (
+                <LinkComponent
+                  key={item.id}
+                  to={item.path}
+                  className={`font-medium transition-colors duration-200 ${
+                    item.isActive
+                      ? 'text-indigo border-b-2 border-indigo pb-1'
+                      : 'text-charcoal-gray hover:text-indigo'
+                  }`}
+                  aria-current={item.isActive ? 'page' : undefined}
+                >
+                  {item.label}
+                </LinkComponent>
+              );
+            })}
           </div>
 
           {/* Mobile menu button */}
@@ -86,21 +90,24 @@ const Navbar: React.FC<NavbarProps> = ({ className = '' }) => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-light-gray">
             <div className="flex flex-col space-y-3">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.id}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
-                    item.isActive
-                      ? 'text-indigo bg-light-gray'
-                      : 'text-charcoal-gray hover:text-indigo hover:bg-light-gray'
-                  }`}
-                  aria-current={item.isActive ? 'page' : undefined}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navigationItems.map((item) => {
+                const LinkComponent = item.path === '/' ? Link : ScrollToTopLink;
+                return (
+                  <LinkComponent
+                    key={item.id}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`block px-3 py-2 rounded-md font-medium transition-colors duration-200 ${
+                      item.isActive
+                        ? 'text-indigo bg-light-gray'
+                        : 'text-charcoal-gray hover:text-indigo hover:bg-light-gray'
+                    }`}
+                    aria-current={item.isActive ? 'page' : undefined}
+                  >
+                    {item.label}
+                  </LinkComponent>
+                );
+              })}
             </div>
           </div>
         )}

@@ -1,4 +1,6 @@
 import { Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ScrollToTopLink } from './ScrollToTopLink';
 
 interface FooterProps {
   className?: string;
@@ -32,24 +34,24 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <div className="text-center">
               <h3 className="text-sm font-semibold text-charcoal-gray mb-3">Explore Cities</h3>
               <div className="flex justify-center space-x-6 text-sm">
-                <a 
-                  href="/city/tokyo" 
+                <ScrollToTopLink 
+                  to="/city/tokyo" 
                   className="text-tokyo-red hover:underline transition-colors"
                 >
                   Tokyo (東京)
-                </a>
-                <a 
-                  href="/city/osaka" 
+                </ScrollToTopLink>
+                <ScrollToTopLink 
+                  to="/city/osaka" 
                   className="text-osaka-orange hover:underline transition-colors"
                 >
                   Osaka (大阪)
-                </a>
-                <a 
-                  href="/city/kyoto" 
+                </ScrollToTopLink>
+                <ScrollToTopLink 
+                  to="/city/kyoto" 
                   className="text-kyoto-blue hover:underline transition-colors"
                 >
                   Kyoto (京都)
-                </a>
+                </ScrollToTopLink>
               </div>
             </div>
           </div>
