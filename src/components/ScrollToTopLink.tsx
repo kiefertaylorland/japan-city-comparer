@@ -13,12 +13,18 @@ export const ScrollToTopLink: React.FC<ScrollToTopLinkProps> = ({
   ...props 
 }) => {
   const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    // Scroll to top immediately when link is clicked
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
+    // Extract the target location from props
+    const targetLocation = props.to;
+    
+    // Check if the current location differs from the target location
+    if (window.location.pathname !== targetLocation) {
+      // Scroll to top immediately when link is clicked
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
     
     // Call the original onClick handler if provided
     if (onClick) {
