@@ -5,11 +5,11 @@ import Footer from './components/Footer'
 import Homepage from './pages/Homepage'
 import CityDetailPage from './pages/CityDetailPage'
 import NotFoundPage from './pages/NotFoundPage'
-import { useScrollToTop } from './hooks/useScrollToTop'
+{/* import { useScrollToTop } from './hooks/useScrollToTop' */}
 
 function App() {
   // Automatically scroll to top when route changes
-  useScrollToTop();
+  {/* useScrollToTop(); */}
 
   return (
     <ErrorBoundary>
